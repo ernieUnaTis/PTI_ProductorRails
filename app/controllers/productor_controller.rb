@@ -14,9 +14,10 @@ class ProductorController < ApplicationController
          @mensajeria_list = {id: @id, shortcode: @shortcode, carrier: @carrier,msisdn: @msisdn,tipo: @tipo,servicio: @servicio, cobro: @cobro }
          msg  = @mensajeria_list.to_json
          redis = Redis.new
-         queue = Redis::Queue.new('q_test_mensajeria','bp_q_test',  :redis => redis)
+         queue = Redis::Queue.new('q_test_mensajeria','bp_q_PTI',  :redis => redis)
          queue.push msg
-         redirect_to "/consumidores"
+         return "OK"
+         #redirect_to "/consumidores"
     end
 
 
