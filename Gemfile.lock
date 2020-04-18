@@ -50,6 +50,8 @@ GEM
     bindex (0.7.0)
     bootsnap (1.4.4)
       msgpack (~> 1.0)
+    bootsnap (1.4.4-java)
+      msgpack (~> 1.0)
     builder (3.2.3)
     byebug (11.0.1)
     capybara (3.25.0)
@@ -79,6 +81,9 @@ GEM
       tzinfo
     execjs (2.7.0)
     ffi (1.11.1)
+    ffi (1.11.1-java)
+    ffi (1.11.1-x64-mingw32)
+    ffi (1.11.1-x86-mingw32)
     fugit (1.2.2)
       et-orbi (~> 1.1, >= 1.1.8)
       raabro (~> 1.1)
@@ -89,6 +94,7 @@ GEM
     io-like (0.3.0)
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
+    libv8 (3.16.14.19)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -107,13 +113,23 @@ GEM
     minitest (5.11.3)
     mono_logger (1.1.0)
     msgpack (1.3.0)
+    msgpack (1.3.0-java)
+    msgpack (1.3.0-x64-mingw32)
+    msgpack (1.3.0-x86-mingw32)
     multi_json (1.13.1)
     mustermann (1.0.3)
     nio4r (2.3.1)
+    nio4r (2.3.1-java)
     nokogiri (1.10.3)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.3-java)
+    nokogiri (1.10.3-x64-mingw32)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.3-x86-mingw32)
       mini_portile2 (~> 2.4.0)
     public_suffix (3.1.1)
     puma (3.12.1)
+    puma (3.12.1-java)
     raabro (1.1.6)
     rack (2.0.7)
     rack-protection (2.0.5)
@@ -169,6 +185,7 @@ GEM
       redis-store (>= 1.2, < 2)
     redis-store (1.6.0)
       redis (>= 2.2, < 5)
+    ref (2.0.0)
     regexp_parser (1.5.1)
     resque (2.0.0)
       mono_logger (~> 1.0)
@@ -216,14 +233,20 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.1)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     thor (0.20.3)
     thread_safe (0.3.6)
+    thread_safe (0.3.6-java)
     tilt (2.0.9)
     turbolinks (5.2.0)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2019.3)
+      tzinfo (>= 1.0.0)
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
     vegas (0.1.11)
@@ -235,12 +258,18 @@ GEM
       railties (>= 5.0)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
+    websocket-driver (0.7.1-java)
+      websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
 PLATFORMS
+  java
   ruby
+  x64-mingw32
+  x86-mingw32
+  x86-mswin32
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
@@ -248,6 +277,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  execjs
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
@@ -262,13 +292,14 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
+  therubyracer
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.4.0p0
+   ruby 2.6.0p0
 
 BUNDLED WITH
-   1.14.6
+   2.1.4

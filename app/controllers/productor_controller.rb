@@ -16,7 +16,9 @@ class ProductorController < ApplicationController
          redis = Redis.new
          queue = Redis::Queue.new('q_test_mensajeria','bp_q_test',  :redis => redis)
          queue.push msg
-         redirect_to "/consumidores"
+         
+
+
     end
 
 
